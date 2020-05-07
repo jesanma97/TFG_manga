@@ -2324,6 +2324,7 @@ Boruto nº7
 Boruto nº8
 Boruto nº9
 Boruto nº10
+Boruto nº11
 
 
 
@@ -7109,6 +7110,14 @@ Fate/Grand Order-turas réalta- nº4
 Fate/Grand Order-turas réalta- nº5
 Fate/Grand Order-turas réalta- nº6
 Fate/Grand Order-turas réalta- nº7
+Fate/stay night[Heaven's Feel] nº1
+Fate/stay night[Heaven's Feel] nº2
+Fate/stay night[Heaven's Feel] nº3
+Fate/stay night[Heaven's Feel] nº4
+Fate/stay night[Heaven's Feel] nº5
+Fate/stay night[Heaven's Feel] nº6
+Fate/stay night[Heaven's Feel] nº7
+Fate/stay night[Heaven's Feel] nº8
 Fausto
 Fausto
 Fausto
@@ -14674,6 +14683,7 @@ Samurai 8 nº1
 Samurai 8 nº2
 Samurai 8 nº3
 Samurai 8 nº4
+Samurai 8 nº5
 Samurai Champloo nº1
 Samurai Champloo nº2
 SamuraiDeeper Kyo nº1
@@ -16920,6 +16930,7 @@ Ultramarine Magmell nº7
 Ultramarine Magmell nº8
 Un Millón deLágrimas nº1
 Un Millón deLágrimas nº2
+
 Un samurái en el cajón
 Un Zoo en Invierno
 
@@ -17568,7 +17579,7 @@ your name. nº2
 your name. nº3
 
 
-
+Youtubers in love
 Yu Yu Hakusho nº1
 Yu Yu Hakusho nº2
 Yu Yu Hakusho nº3

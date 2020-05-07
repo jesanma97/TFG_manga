@@ -2324,6 +2324,7 @@ http://www.listadomanga.es/imagenes/colecciones/manga/b/boruto07.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/b/boruto08.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/b/boruto09.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/b/boruto10.jpg
+http://www.listadomanga.es/imagenes/colecciones/manga/b/boruto11.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/n/naruto01.jpg
 http://www.listadomanga.es/imagenes/colecciones/catalan/n/narutocat01.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/n/narutoplaneta01.jpg
@@ -7109,6 +7110,14 @@ http://www.listadomanga.es/imagenes/colecciones/manga/f/fategoturas04.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/f/fategoturas05.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/f/fategoturas06.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/f/fategoturas07.jpg
+http://www.listadomanga.es/imagenes/colecciones/manga/f/fatestaynightheavensfeel01.jpg
+http://www.listadomanga.es/imagenes/colecciones/manga/f/fatestaynightheavensfeel02.jpg
+http://www.listadomanga.es/imagenes/colecciones/manga/f/fatestaynightheavensfeel03.jpg
+http://www.listadomanga.es/imagenes/colecciones/manga/f/fatestaynightheavensfeel04.jpg
+http://www.listadomanga.es/imagenes/colecciones/manga/f/fatestaynightheavensfeel05.jpg
+http://www.listadomanga.es/imagenes/colecciones/manga/f/fatestaynightheavensfeel06.jpg
+http://www.listadomanga.es/imagenes/colecciones/manga/f/fatestaynightheavensfeel07.jpg
+http://www.listadomanga.es/imagenes/colecciones/manga/f/fatestaynightheavensfeel08.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/f/fausto.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/f/fenixintegral01.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/f/fenixintegral01ed2.jpg
@@ -14674,6 +14683,7 @@ http://www.listadomanga.es/imagenes/colecciones/manga/s/samurai801.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/s/samurai802.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/s/samurai803.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/s/samurai804.jpg
+http://www.listadomanga.es/imagenes/colecciones/manga/s/samurai805.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/s/samuraichamploo01.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/s/samuraichamploo02.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/s/samuraideeperkyo01.jpg
@@ -16920,6 +16930,7 @@ http://www.listadomanga.es/imagenes/colecciones/manga/u/ultramarine07.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/u/ultramarine08.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/u/unmillondelagrimas01.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/u/unmillondelagrimas02.jpg
+http://www.listadomanga.es/imagenes/colecciones/manga/u/unmundomaravilloso.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/u/unsamuraienelcajon.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/u/unzooeninvierno.jpg
 http://www.listadomanga.es/imagenes/colecciones/manga/u/unzooeninviernonuevo.jpg

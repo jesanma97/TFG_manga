@@ -833,6 +833,20 @@ else:
             sent_lectura = list_sent_lectura()
             tomos_jap = list_num_japon()
             tomos_españa = list_num_españa()
+            
+
+            for i in range(len(tit_obras)):
+                lista.append((str(tit_obras[i]),str(tit_org[i]),str(dibujos[i]),str(guion[i]),str(ed_franc[i]),str(ed_amer[i]),str(ed_jap[i]),str(ed_esp[i]),str(genero[i]),str(formato[i]),str(sent_lectura[i]),str(tomos_jap[i]),str(tomos_españa[i])))
+            cursor.executemany("INSERT INTO `colección`(`titulo_coleccion`, `titulo_original`, `dibujante`, `guionista`, `edicion_francesa`, `editorial_americana`, `editorial_japonesa`, `editorial_española`, `genero`, `formato`, `sentido_lectura`, `num_tomos_japon`, `num_tomos_españa`) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",lista)
+            conn.commit()
+            print("Se han añadido los datos correctamente!!!!")
+
+
+        #res_obras()
+
+
+        def tabla_coleccion_has_tomos():
+            lista = []
             #cursor.execute("SELECT `Id.tomo` FROM `tomos` LEFT JOIN `colección` ON `colección`.`titulo_coleccion` = `tomos`.`nombre_colección`")
             cursor.execute("SELECT `Id.tomo`,`nombre_colección` FROM `tomos`")
             myresult = cursor.fetchall()
@@ -841,22 +855,33 @@ else:
 
             for x in myresult:
                 for y in myresult2:
+                    ind = myresult.index(x) + 1
                     if str(x[1]) == str(y[0]):
-                        print(x[1] + "     " + y[0] + "    True")
-                    else:
-                        print(x[1] + "     " + y[0] + "    False")
-            
-            
-            for x in myresult:
-                for i in range(len(tit_obras)):
-                    lista.append((str(tit_obras[i]),str(tit_org[i]),str(dibujos[i]),str(guion[i]),str(ed_franc[i]),str(ed_amer[i]),str(ed_jap[i]),str(ed_esp[i]),str(genero[i]),str(formato[i]),str(sent_lectura[i]),str(tomos_jap[i]),str(tomos_españa[i]),x[0]))
-            
-            cursor.executemany("INSERT INTO `colección`(`titulo_coleccion`, `titulo_original`, `dibujante`, `guionista`, `edicion_francesa`, `editorial_americana`, `editorial_japonesa`, `editorial_española`, `genero`, `formato`, `sentido_lectura`, `num_tomos_japon`, `num_tomos_españa`,`Tomos_Id.tomo`) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",lista)
+                        #print(y[0] + "     " + str(ind))
+                        lista.append((str(y[0]),ind))
+                        break
+                continue
+            cursor.executemany("INSERT INTO `colección_has_tomos`(`Colección_titulo_coleccion`, `Tomos_Id.tomo`) VALUES (%s,%s)",lista)
             conn.commit()
             print("Se han añadido los datos correctamente!!!!")
+        tabla_coleccion_has_tomos()
 
 
-        res_obras()
+
+
+        '''def prueba():
+            lista1=[1,2,4]
+            lista2=[1,2,3,4]
+            res = []
+            for x in lista1:
+                for y in lista2:
+                    if x == y:
+                        res.append((x,y))
+                        break
+                continue
+            print(res)
+        
+        prueba()'''
 
 
 
@@ -880,7 +905,9 @@ else:
                         if titulo_col.string.capitalize().find("Sinopsis") != -1 or titulo_col.string.capitalize().find("Cofre") != -1 or titulo_col.string.capitalize().find("Regalo") != -1 or titulo_col.string.capitalize().find("Números") != -1 or titulo_col.string.capitalize().find("Ficha") != -1 or titulo_col.string.capitalize().find("Carta") != -1 or titulo_col.string.capitalize().find("Preview") != -1 or titulo_col.string.capitalize().find("Promo") != -1 or titulo_col.string.capitalize().find("Ilustración") != -1 or titulo_col.string.capitalize().find("Títulos") != -1 or titulo_col.string.capitalize().find("Otras ediciones") != -1:
                             pass
                         else:
-                            titulos_obras.append(titulo_col.string)
+                            titulo_res = titulo_col.string[0:len(titulo_col.string)-2]
+                            #print(titulo_res)
+                            titulos_obras.append(titulo_res)
                             #yield titulos_obras[-1]
                 for datos_tomos in col_html.find_all("td",{"class":"cen"}):
                     yield titulos_obras[-1]
@@ -898,6 +925,19 @@ else:
             f = open("output_titulos.txt","r",encoding="utf-8")
             s = str(f.read()).splitlines()
             return s
+
+        
+        def compare_lists():
+            for x in list_titulos():
+                for y in x:
+                    print(y)
+            '''for x in list_titulos_obras():
+                for y in list_titulos():
+                    if x == y:
+                        print(x + "          " + y + "   True")
+                    else:
+                        print(x + "   " + str(len(x))+"          " + y + "    " + str(len(y))+ "   False")'''
+        #compare_lists()
         
 
 
