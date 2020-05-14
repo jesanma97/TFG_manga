@@ -235,6 +235,7 @@ Act-Age nº7
 Act-Age nº8
 Act-Age nº9
 Act-Age nº10
+Act-Age nº11
 Adam y Eve nº1
 Adam y Eve nº2
 Adolescentepero no inocente nº1
@@ -6426,8 +6427,8 @@ El carterista nº2
 El chico de losojos de gato nº1
 El chico de losojos de gato nº2
 El Chico que me Gusta
-El clan de los Poe nº1
-El clan de los Poe nº2
+El Chico que me Gusta
+El Chico que me Gusta
 El club del divorcio nº1
 El club del divorcio nº2
 
@@ -11517,6 +11518,9 @@ Meditaciones
 Meditaciones
 Memorias nº2
 
+Menstru, tu amiga fiel nº1
+Menstru, tu amiga fiel nº2
+Menstru, tu amiga fiel nº3
 Merupuri nº1
 Merupuri nº2
 Merupuri nº3
@@ -13234,10 +13238,10 @@ Ping Pong nº4
 Ping Pong nº5
 Pink
 Pink Prisioner
-
-
-
-
+Piña, pastel o tiramisú:El primer amor
+Piña, pastel o tiramisú:El primer amor
+Piña, pastel o tiramisú:El primer amor
+Piña, pastel o tiramisú:El primer amor
 Placer a la Carta
 Planetes nº1
 Planetes nº2

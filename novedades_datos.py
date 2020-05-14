@@ -36,8 +36,6 @@ else:
                 img_nov['src'] = "http://www.listadomanga.es/" + img_nov['src']
                 #print(img_nov['src'])
                 imgs_nov.append(img_nov['src'])
-
-        #print(titulo_nov)
         
         lista_nueva = f7(imgs_nov)
 

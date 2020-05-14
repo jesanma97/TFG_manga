@@ -235,6 +235,7 @@
 
 
 
+
 248 páginas en B/N
 272 páginas en B/N
 192 páginas en B/N
@@ -6426,8 +6427,8 @@ o72 páginas a color
 536 páginas en B/N
 
 128 páginas en B/N
-
-
+128 páginas en B/N
+128 páginas en B/N
 504 páginas en B/N
 496 páginas en B/N
 
@@ -7727,7 +7728,7 @@ k96 páginas a color
 192 páginas en B/N
 192 páginas en B/N
 192 páginas en B/N
-248 páginas en B/N
+250 páginas en B/N
 
 
 168 páginas en B/N
@@ -9056,7 +9057,7 @@ d96 páginas en B/N
 212 páginas en B/N
 212 páginas en B/N
 212 páginas en B/N
-212 páginas en B/N
+208 páginas en B/N
 
 
 
@@ -11006,7 +11007,7 @@ a72 páginas a color
 200 páginas en B/N
 196 páginas en B/N
 192 páginas en B/N
-192 páginas en B/N
+190 páginas en B/N
 
 
 
@@ -11192,7 +11193,7 @@ k96 páginas a color
 192 páginas en B/N
 192 páginas en B/N
 192 páginas en B/N
-
+192 páginas en B/N
 
 
 
@@ -11516,6 +11517,9 @@ k96 páginas a color
 200 páginas en B/N
 200 páginas en B/N
 132 páginas en B/N
+
+224 páginas en B/N
+
 
 192 páginas en B/N
 192 páginas en B/N
@@ -13234,10 +13238,10 @@ l96 páginas en B/N
 208 páginas en B/N
 256 páginas en B/N
 184 páginas en B/N
-
-
-
-
+188 páginas en B/N
+188 páginas en B/N
+188 páginas en B/N
+188 páginas en B/N
 196 páginas en B/N
 230 páginas en B/N
 248 páginas en B/N
@@ -15939,7 +15943,7 @@ e24 páginas en B/N+ 144 páginas a color
 
 160 páginas a color
 184 páginas en B/N
-
+184 páginas en B/N
 228 páginas en B/N
 192 páginas en B/N
 200 páginas en B/N

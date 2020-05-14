@@ -864,7 +864,7 @@ else:
             cursor.executemany("INSERT INTO `colección_has_tomos`(`Colección_titulo_coleccion`, `Tomos_Id.tomo`) VALUES (%s,%s)",lista)
             conn.commit()
             print("Se han añadido los datos correctamente!!!!")
-        tabla_coleccion_has_tomos()
+        #tabla_coleccion_has_tomos()
 
 
 
@@ -1148,6 +1148,7 @@ else:
                     imgs_tomos.append(img_nov['src'])
                 yield imgs_tomos[-1]
         
+        
         def txt_portadas():
             outputFile = open("output_portadas.txt","w",encoding="utf-8")
             for i in portadas_tomos(res2):
@@ -1172,9 +1173,9 @@ else:
             tomos = list_numeros()
             
             for i in range(len(titulos)):
-                lista.append((i,str(titulos[i]),str(portadas[i]),str(tomos[i]),str(paginas[i]),str(precios[i])))
+                lista.append((i,str(titulos[i]),str(portadas[i]),str(tomos[i]),str(paginas[i]),str(precios[i]),str(titulos[i])))
             
-            cursor.executemany("INSERT INTO `tomos`(`Id.tomo`,`nombre_colección`, `enlace_portada_tomo`, `nombre_tomo`, `paginas_tomo`, `precio_tomo`) VALUES (%s,%s,%s,%s,%s,%s)",lista)
+            cursor.executemany("INSERT INTO `tomos`(`Id.tomo`,`nombre_colección`, `enlace_portada_tomo`, `nombre_tomo`, `paginas_tomo`, `precio_tomo`,`Colección_titulo_coleccion`) VALUES (%s,%s,%s,%s,%s,%s,%s)",lista)
             conn.commit()
             print("Se han añadido los datos correctamente!!!!")
         #res_tomos()
