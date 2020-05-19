@@ -157,6 +157,8 @@ else:
                 outputFile.write(string + "\n")
             outputFile.close()
         
+        #txt_titulos()
+        
         def list_titulos_obras():
             f = open("output_titulos_obras.txt","r",encoding="utf-8")
             s = str(f.read()).splitlines()
@@ -224,6 +226,8 @@ else:
                 string = str(i) + "\n"
                 outputFile.write(string)
             outputFile.close()
+        
+        #txt_titulo_org()
 
         def list_tit_original():
             f = open("output_titulos_org.txt","r",encoding="utf-8")
@@ -260,7 +264,7 @@ else:
                         ed_jap = str1.find("Editorial japonesa")
                         ed_esp = str1.find("Editorial española")
                         if script != -1:
-                            guion.append(str1[script + 6:f])
+                            guion.append(str1[script + 7:f])
                             yield guion[-1]
                         elif script == -1 and f != -1:
                             guion.append("")
@@ -310,6 +314,7 @@ else:
                 #print(j)
                 for campo in j: 
                     ind = j.index(campo)
+                    #print("El campo es:" + campo + " y su INDICE es el siguiente:" + str(ind))
                     if ind==3:
                         descripcion = campo.split(":")
                         str1 = ' '.join(s for s in descripcion)
@@ -338,58 +343,58 @@ else:
                         one_piece1 = str1.find("Color Walk")
                         if f != -1:
                             if dis_pers != -1 and hist_original != -1 or dis_pers != -1:
-                                dibujo.append(str1[f+6:dis_pers])
+                                dibujo.append(str1[f+8:dis_pers])
                                 yield dibujo[-1]
                             elif hist_original != -1 and sup != -1 or hist_original != -1:
-                                dibujo.append(str1[f+6:hist_original])
+                                dibujo.append(str1[f+8:hist_original])
                                 yield dibujo[-1]
                             elif hist_original != -1 and color != -1:
-                                dibujo.append(str1[f+6:hist_original])
+                                dibujo.append(str1[f+8:hist_original])
                                 yield dibujo[-1]
                             elif sup != -1 and colab != -1 or sup != -1:
-                                dibujo.append(str1[f+6:sup])
+                                dibujo.append(str1[f+8:sup])
                                 yield dibujo[-1]
                             elif color != -1:
-                                dibujo.append(str1[f+6:color])
+                                dibujo.append(str1[f+8:color])
                                 yield dibujo[-1]
                             elif prod != -1:
-                                dibujo.append(str1[f+6:prod])
+                                dibujo.append(str1[f+8:prod])
                                 yield dibujo[-1]
                             elif colab != -1:
-                                dibujo.append(str1[f+6:colab])
+                                dibujo.append(str1[f+8:colab])
                                 yield dibujo[-1]
                             elif concep_art != -1:
-                                dibujo.append(str1[f+6:concep_art])
+                                dibujo.append(str1[f+8:concep_art])
                                 yield dibujo[-1]
                             elif diseños != -1:
-                                dibujo.append(str1[f+6:diseños])
+                                dibujo.append(str1[f+8:diseños])
                                 yield dibujo[-1]
                             elif escenarios != -1:
-                                dibujo.append(str1[f+6:escenarios])
+                                dibujo.append(str1[f+8:escenarios])
                                 yield dibujo[-1]
                             elif r == -1 and ed_esp != -1:
-                                dibujo.append(str1[f+6:ed_esp])
+                                dibujo.append(str1[f+8:ed_esp])
                                 yield dibujo[-1]
                             elif r ==-1 and ed_franc != -1:
-                                dibujo.append(str1[f+6:ed_franc])
+                                dibujo.append(str1[f+8:ed_franc])
                                 yield dibujo[-1]
                             elif autores != -1:
-                                dibujo.append(str1[f+6:autores])
+                                dibujo.append(str1[f+8:autores])
                                 yield dibujo[-1]
                             elif r ==-1 and ed_sing != -1:
-                                dibujo.append(str1[f+6:ed_sing])
+                                dibujo.append(str1[f+8:ed_sing])
                                 yield dibujo[-1]
                             elif story != -1:
-                                dibujo.append(str1[f+6:story])
+                                dibujo.append(str1[f+8:story])
                                 yield dibujo[-1]
                             elif idea_org != -1:
-                                dibujo.append(str1[f+6:idea_org])
+                                dibujo.append(str1[f+8:idea_org])
                                 yield dibujo[-1]
                             elif asistentes != -1:
-                                dibujo.append(str1[f+6:asistentes])
+                                dibujo.append(str1[f+8:asistentes])
                                 yield dibujo[-1]
                             else:
-                                dibujo.append(str1[f+6:r])
+                                dibujo.append(str1[f+8:r])
                                 yield dibujo[-1]
                         else:
                             if one_piece1 != -1:
@@ -446,7 +451,6 @@ else:
 
 
 
-
         
         def txt_dibujo():
             outputFile = open("output_dibujo.txt","w",encoding="utf-8")
@@ -454,6 +458,8 @@ else:
                 string = str(i) + "\n"
                 outputFile.write(string)
             outputFile.close()
+        
+        #txt_dibujo()
 
         def list_dibujo():
             f = open("output_dibujo.txt","r",encoding="utf-8")
@@ -495,6 +501,8 @@ else:
                 outputFile.write(string)
             outputFile.close()
 
+        #txt_ed_francesa()
+
         def list_ed_francesa():
             f = open("output_ed_francesa.txt","r",encoding="utf-8")
             s = str(f.read()).splitlines()
@@ -533,6 +541,8 @@ else:
                 string = str(i) + "\n"
                 outputFile.write(string)
             outputFile.close()
+
+        #txt_ed_americana()
         
         def list_ed_americana():
             f = open("output_ed_americana.txt","r",encoding="utf-8")
@@ -574,6 +584,8 @@ else:
                 outputFile.write(string)
             outputFile.close()
 
+        #txt_ed_jap()
+
         def list_ed_jap():
             f = open("output_ed_jap.txt","r",encoding="utf-8")
             s = str(f.read()).splitlines()
@@ -600,7 +612,7 @@ else:
                         es = str1.find("Colección ") 
                         ej = str1.find("Editorial española ") 
                         if ej != -1:
-                            ed_española.append(str1[ej+18:es])
+                            ed_española.append(str1[ej+20:es])
                             yield ed_española[-1]
                         elif ej == -1 and es != -1:
                             ed_española.append("")
@@ -611,6 +623,8 @@ else:
                 string = str(i) + "\n"
                 outputFile.write(string)
             outputFile.close()
+
+        #txt_ed_esp()
 
         def list_ed_esp():
             f = open("output_ed_esp.txt","r",encoding="utf-8")
@@ -651,6 +665,8 @@ else:
                 outputFile.write(string)
             outputFile.close()
 
+        #txt_generos()
+
         def list_generos():
             f = open("output_generos.txt","r",encoding="utf-8")
             s = str(f.read()).splitlines()
@@ -690,6 +706,8 @@ else:
                 outputFile.write(string)
             outputFile.close()
 
+        #txt_formatos()
+
         def list_formatos():
             f = open("output_formatos.txt","r",encoding="utf-8")
             s = str(f.read()).splitlines()
@@ -728,6 +746,8 @@ else:
                 string = str(i) + "\n"
                 outputFile.write(string)
             outputFile.close()
+
+        #txt_sent_lectura()
         
         def list_sent_lectura():
             f = open("output_sent_lectura.txt","r",encoding="utf-8")
@@ -767,6 +787,8 @@ else:
                 string = str(i) + "\n"
                 outputFile.write(string)
             outputFile.close()
+
+        #txt_num_japon()
 
         def list_num_japon():
             f = open("output_num_japon.txt","r",encoding="utf-8")
@@ -811,6 +833,8 @@ else:
                 outputFile.write(string)
             outputFile.close()
 
+        #txt_num_españa()
+
         def list_num_españa():
             f = open("output_num_españa.txt","r",encoding="utf-8")
             s = str(f.read()).splitlines()
@@ -837,12 +861,12 @@ else:
 
             for i in range(len(tit_obras)):
                 lista.append((str(tit_obras[i]),str(tit_org[i]),str(dibujos[i]),str(guion[i]),str(ed_franc[i]),str(ed_amer[i]),str(ed_jap[i]),str(ed_esp[i]),str(genero[i]),str(formato[i]),str(sent_lectura[i]),str(tomos_jap[i]),str(tomos_españa[i])))
-            cursor.executemany("INSERT INTO `colección`(`titulo_coleccion`, `titulo_original`, `dibujante`, `guionista`, `edicion_francesa`, `editorial_americana`, `editorial_japonesa`, `editorial_española`, `genero`, `formato`, `sentido_lectura`, `num_tomos_japon`, `num_tomos_españa`) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",lista)
+            cursor.executemany("INSERT INTO `colección`(`titulo_coleccion`, `titulo_original`, `dibujante`, `guionista`, `editorial_francesa`, `editorial_americana`, `editorial_japonesa`, `editorial_española`, `genero`, `formato`, `sentido_lectura`, `num_tomos_japon`, `num_tomos_españa`) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",lista)
             conn.commit()
             print("Se han añadido los datos correctamente!!!!")
 
 
-        #res_obras()
+        res_obras()
 
 
         def tabla_coleccion_has_tomos():

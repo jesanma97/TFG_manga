@@ -1302,6 +1302,7 @@
   Tomo (115x170) rústica (tapa blanda) con sobrecubierta
   Tomo (120x163) rústica (tapa blanda)
   Medio tomo C5 (162x229) rústica (tapa blanda)
+  Tomo A5 (148x210) rústica (tapa blanda) con sobrecubierta
   Tomo (115x170) rústica (tapa blanda) con sobrecubierta
   Tomo A5 (150x210) rústica (tapa blanda) con solapas
   Tomo A5 (150x210) rústica (tapa blanda) con solapas
@@ -1660,7 +1661,7 @@
   Tomo B6 (128x180) rústica (tapa blanda) con sobrecubierta
   Tomo B6 (130x182) rústica (tapa blanda) con sobrecubierta
   Tomo A5 (150x210) rústica (tapa blanda) con sobrecubierta
-  Tomo (115x175) rústica (tapa blanda) con sobrecubierta
+  Tomo (115x175) rústica (tapa blanda) con sobrecubierta reversible
   Tomo A5 (150x210) rústica (tapa blanda) con solapas
   Tomo B6 (130x180) rústica (tapa blanda) con sobrecubierta
   Tomo (111x177) rústica (tapa blanda) con sobrecubierta
@@ -1704,7 +1705,7 @@
   Tomo (133x185) rústica (tapa blanda) con sobrecubierta
   Tomo B6 (130x180) rústica (tapa blanda) con sobrecubierta
   Tomo (111x177) rústica (tapa blanda) con sobrecubierta
-  Tomo A5 (150x210) rústica (tapa blanda) con sobrecubierta
+  Tomo B6 (128x180) rústica (tapa blanda) con sobrecubierta
   Tomo (115x170) rústica (tapa blanda) con sobrecubierta
   Comic-book (168x257) rústica (tapa blanda) con lomo encolado
   Tomo (133x185) rústica (tapa blanda) con sobrecubierta

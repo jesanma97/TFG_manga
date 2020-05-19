@@ -52,7 +52,6 @@ else:
             nextelem = res[(idx + 1) % len(res)]
             if thiselem.find("Novedades ") == 0 and nextelem.find("Novedades ") == 0:
                 return titulos_nov
-        
             
         children2 = res2.findAll("td",{"class":"der"})
         for child in children2:
@@ -61,6 +60,8 @@ else:
                 mes_siguiente = res1.attrs['href']
                 html2 = urlopen(mes_siguiente)
                 return titulos_nov + novedades(html2)
+
+    novedades(html)
     
     
     
