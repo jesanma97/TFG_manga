@@ -1,0 +1,29 @@
+
+<ion-content padding>
+  <div>
+  
+  <img class="icon" src="../../assets/ikari_logo.jpg" alt="">
+<ion-item>
+  <ion-label  position="floating">
+    <ion-icon name="mail-outline"></ion-icon>
+    <strong>  Correo electrónico</strong>
+  </ion-label>
+  <ion-input  translucent type="text" [(ngModel)]="email" name="email"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label translucent position="floating">
+    <ion-icon name="key-outline"></ion-icon>
+    <strong>  Contraseña</strong>
+  </ion-label>
+  <ion-input translucent type="password" [(ngModel)]="password" name="password"></ion-input>
+</ion-item>
+<br>
+<ion-button (click)="OnSubmitLogin()" expand="block"><strong>Iniciar Sesión</strong></ion-button>
+<br>
+<div class="text" >
+  <ion-text  color="primary" s tappable routerLink="/registro" routerDirection="forward">¿Nuevo en la App? <strong>Registrarse</strong></ion-text>
+</div>
+
+</div>
+
+</ion-content>

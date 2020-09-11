@@ -1,0 +1,17 @@
+<ion-app>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button routerLink="/intermediaria" defaultHref="/intermediaria" routerDirection="forward"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item (click)=this.proveedor.setData(colec) *ngFor= "let colec of colecciones" no-lines routerLink="/miscolecciones-card" routerDirection="forward">
+      {{colec}}
+    </ion-item>
+  </ion-list>
+</ion-content>
+</ion-app>

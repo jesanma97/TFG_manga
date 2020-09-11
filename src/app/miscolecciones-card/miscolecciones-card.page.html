@@ -1,0 +1,89 @@
+<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+<ion-app>
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/intermediaria" defaultHref="/intermediaria" routerDirection="forward"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-card>
+    <ion-card-header>
+      <div class="bg-image"><img src="../../assets/books.jpg"/></div>
+        
+      <div class="bg-text">
+        <h1>{{datos.titulo}}</h1>
+        <p>{{datos.titulo_original}}</p>
+      </div>
+    </ion-card-header>
+    <ion-card-content>
+    <div>
+      <strong>Dibujante/s:</strong>
+      <div>
+      {{datos.dibujante}}
+    </div>
+    </div>
+    <div>
+      <strong>Guionista/s:</strong>
+      <div>
+      {{datos.guionista}}
+    </div>
+    </div>
+    <div>
+      <strong>Editorial japonesa  <img src="../../assets/japan.svg" width="15px" height="15px"/>:</strong> 
+      <div>
+      {{datos.editorial_japonesa}}
+    </div>
+    </div>
+    <div>
+      <strong>Editorial española  <img src="../../assets/spain.svg" width="15px" height="15px"/>:</strong>
+      <div>
+      {{datos.editorial_espanola}}
+    </div>
+    </div>
+    <div>
+      <strong>Volúmenes en Japón  <img src="../../assets/japan.svg" width="15px" height="15px"/>:</strong>
+      <div>
+      {{datos.tomos_japon}}
+    </div>
+    </div>
+    <div>
+      <strong>Volúmenes en España  <img src="../../assets/spain.svg" width="15px" height="15px"/>:</strong>
+      <div>
+      {{datos.tomos_espana}}
+    </div>
+    </div>
+    <div>
+      <strong>Formato:</strong>
+      <div>
+      {{datos.formato}}
+      </div>
+    </div>
+    <div>
+      <ion-list>
+        <ion-item ><ion-label style="font-size: 20px;"><strong>Volúmenes adquiridos</strong></ion-label></ion-item>
+      </ion-list>
+    </div>
+    <div>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4" *ngFor="let tomo of tomos_list2">
+            <img src="{{tomo.portada}}"/>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <ion-list>
+      <ion-list-header>
+        <ion-label style="font-size: 18px;">
+          Has adquirido {{volumenes_adquiridos}} de {{numero_tomos}} ({{(volumenes_adquiridos/numero_tomos).toFixed(3)*100}} %)
+        </ion-label>
+      </ion-list-header>
+      <ion-progress-bar color="success" value="{{volumenes_adquiridos/numero_tomos}}"></ion-progress-bar>
+    </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+</ion-app>

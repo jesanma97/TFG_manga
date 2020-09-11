@@ -1,0 +1,18 @@
+<ion-app>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button routerLink="/intermediaria" defaultHref="/intermediaria" routerDirection="forward"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item class="items" (click)=this.proveedor.setData(tomo) *ngFor= "let tomo of volumenes" no-lines routerLink="/mis-volumenes-card" routerDirection="forward">
+      <img class="img" src="{{tomo.portada}}"/>
+      <strong>{{tomo.titulo}}</strong>
+    </ion-item>
+  </ion-list>
+</ion-content>
+</ion-app>

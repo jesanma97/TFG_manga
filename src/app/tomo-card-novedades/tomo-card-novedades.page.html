@@ -1,0 +1,46 @@
+<ion-app>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button routerLink="/novedades" defaultHref="/novedades" routerDirection="forward"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content fullscreen>
+    <ion-card color="#40B5B5">
+      <ion-card-header>
+        <div>
+          <img class="bg-image" src="{{tomo_info.portada}}"/>
+          <div>
+            <ion-toggle class="toggle" slot="start" [(ngModel)]="datos.anadidoChecked"></ion-toggle>
+            <ion-label  class="label">Lo tengo!</ion-label>
+          </div>
+          <div>
+            <ion-toggle class="toggle2" slot="start" [(ngModel)]="datos.pendienteChecked"></ion-toggle>
+            <ion-label  class="label2">Lo quiero!</ion-label>
+          </div>
+        
+        </div>
+          
+        <div>
+          <ion-card-title color="#6F7373">{{tomo_info.titulo}}</ion-card-title>
+        </div>
+      </ion-card-header>
+      <ion-card-content>
+      <div>
+        <strong>Páginas:</strong>
+        <div>
+        {{tomo_info.paginas}}
+      </div>
+      </div>
+      <div>
+        <strong>Precio:</strong>
+        <div>
+        {{tomo_info.precio}}
+      </div>
+      </div>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+  </ion-app>

@@ -1,0 +1,19 @@
+<ion-app>
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button routerLink="/coleccion-card" defaultHref="/coleccion-card" routerDirection="forward"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <ion-item class="items" (click)=this.proveedor.setData(tomo)   *ngFor= "let tomo of tomos_list">
+      <img class="img" src="{{tomo.portada}}"/>
+      <strong>{{tomo.titulo}}</strong>
+      <ion-checkbox [(ngModel)]="tomo.isChecked" (ionChange)="this.proveedor.setVolumen(tomo)" slot="end"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>
+</ion-app>

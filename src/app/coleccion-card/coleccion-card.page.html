@@ -1,0 +1,81 @@
+<meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+<ion-app>
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerLink="/home" defaultHref="/home" routerDirection="forward"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-card>
+    <ion-card-header>
+      <div class="bg-image"><img src="../../assets/books.jpg"/></div>
+        
+      <div class="bg-text">
+        <h1>{{datos_colec_card.titulo}}</h1>
+        <p>{{datos_colec_card.titulo_original}}</p>
+      </div>
+    </ion-card-header>
+    <ion-card-content>
+    <div>
+      <strong>Dibujante/s:</strong>
+      <div>
+      {{datos_colec_card.dibujante}}
+    </div>
+    </div>
+    <div>
+      <strong>Guionista/s:</strong>
+      <div>
+      {{datos_colec_card.guionista}}
+    </div>
+    </div>
+    <div>
+      <strong>Editorial japonesa  <img src="../../assets/japan.svg" width="15px" height="15px"/>:</strong> 
+      <div>
+      {{datos_colec_card.editorial_japonesa}}
+    </div>
+    </div>
+    <div>
+      <strong>Editorial española  <img src="../../assets/spain.svg" width="15px" height="15px"/>:</strong>
+      <div>
+      {{datos_colec_card.editorial_espanola}}
+    </div>
+    </div>
+    <div>
+      <strong>Volúmenes en Japón  <img src="../../assets/japan.svg" width="15px" height="15px"/>:</strong>
+      <div>
+      {{datos_colec_card.tomos_japon}}
+    </div>
+    </div>
+    <div>
+      <strong>Volúmenes en España  <img src="../../assets/spain.svg" width="15px" height="15px"/>:</strong>
+      <div>
+      {{datos_colec_card.tomos_espana}}
+    </div>
+    </div>
+    <div>
+      <strong>Formato:</strong>
+      <div>
+      {{datos_colec_card.formato}}
+      </div>
+    </div>
+    <div>
+      <ion-list routerLink="/lista-tomos" routerDirection="forward">
+        <ion-item ><strong>Volúmenes</strong></ion-item>
+      </ion-list>
+    </div>
+    <div>
+      <ion-grid>
+        <ion-row>
+          <ion-col (click)="this.proveedor.setData(tomo)" size="3" *ngFor="let tomo of tomos" routerLink="/tomo-card" routerDirection="forward">
+            <img src="{{tomo.portada}}"/>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+</ion-app>

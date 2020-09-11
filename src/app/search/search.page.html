@@ -1,0 +1,19 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button routerDirection="forward"></ion-back-button>
+    <ion-searchbar [formControl]="searchControl" (ionChange)="onSearchInput()"  class ="barra_busqueda" color="light" animated placeholder="Buscar manga"></ion-searchbar>
+    </ion-buttons>
+    <div *ngIf="searching" class="spinner-container">
+      <ion-spinner></ion-spinner>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item (click)="this.proveedor.setData(colec)" *ngFor= "let colec of colecciones"  no-lines routerLink="/coleccion-card" routerDirection="forward" [queryParams]="{valor:colec}">
+      <strong>{{colec.titulo}}</strong>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,89 @@
+.bg-image {
+    /* The image used */
+  
+
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: rgba(232, 235, 233, 0.747);
+    font-weight: bold;
+    border: 3px solid rgba(243, 243, 243, 0.801);
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-20%, -30%);
+    z-index: 2;
+    width: 60%;
+    padding: 16px;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .toggle{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-20%, -30%);
+    z-index: 2;
+    width: 60%;
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+    width: 50px;
+    height: 30px;
+    --background-checked: #7a49a5;
+  }
+  .toggle2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -30%);
+    z-index: 2;
+    width: 60%;
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+    width: 50px;
+    height: 30px;
+    --background-checked: #7a49a5;
+  }
+  .label2{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-20%, -30%);
+    z-index: 2;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+
+  }
+  .label{
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    transform: translate(-20%, -30%);
+    z-index: 2;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+  }

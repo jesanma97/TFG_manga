@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button routerLink="/home" defaultHref="/home" routerDirection="forward"></ion-back-button>
+      </ion-buttons>
+      <ion-title text-center>Reading Challenge</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-title style="width: 100%; text-align: center;">
+      Has adquirido {{volumenes_leidos}} de {{res}} volúmenes
+    </ion-card-title>
+    <br>
+    <ion-list>
+      <ion-list-header>
+        <ion-label>
+          Progreso al {{valor_progreso*100}}%
+        </ion-label>
+      </ion-list-header>
+      <ion-progress-bar color="success" value="{{valor_progreso}}"></ion-progress-bar>
+    </ion-list>
+    <ion-item (click)="presentAlertPrompt()">
+      <ion-icon name="pencil-outline"></ion-icon>
+      <ion-label> Cambiar objetivo</ion-label>
+    </ion-item>
+  </ion-card>
+
+</ion-content>
